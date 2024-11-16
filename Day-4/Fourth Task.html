@@ -6,12 +6,25 @@
     <title>Form</title>
 </head>
 <body>
-    <form action="url" method="get" accept-charset="UTF-8" autocomplete="off">
-     First Name: <input type="text" name="fname"><br> <br>
-     Last Name: <input type="text" name="lname"><br> <br>
-     Email Id:<input type="email" name="email"><br> <br>
+    <form>
+     First Name: <input type="text" name="fname" required>  <br> <br>
+     Last Name: <input type="text" name="lname" required> <br> <br>
+     Email Id:<input type="email" name="email" required> <br> <br>
      Date of Birth: <input type="Date" name="date"><br> <br>
-    <button type="submit">submit</button>
+     Choose file: <input type="file" name="Choose file"><br> <br>
+     Password: <input type="password" name="Password" required maxlength="6"> <br> <br>
+     <label for="">Choose Department:</label>
+     <input type="radio" name="department"/> CSE 
+     <input type="radio" name="department"/> BBA 
+     <input type="radio" name="department"/> MSC
+     <input type="radio" name="department"/> MBA <br> <br>
+     <label for="gender">Choose Gender:</label>
+     <input type="radio" name="gender"/> male 
+     <input type="radio" name="gender"/> female
+     <input type="radio" name="gender"/> other <br> <br>
+     <textarea name="comment" form="usrform">Enter text here...</textarea> <br> <br>
+     <button type="submit">Submit</button><br> <br>
+     <button type="reset">Reset</button>
     </form>
 </body>
 </html>
