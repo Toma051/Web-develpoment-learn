@@ -1,0 +1,39 @@
+span {
+    color: chartreuse;
+    background-color: orange;
+    font-size: 50px;
+}
+
+h1 {
+    color: brown;
+    background-color: aqua;
+    font-size: 50px;
+}
+
+p {
+    color: pink;
+    background-color: blueviolet;
+    font-size: 30px;
+}
+
+#header{
+    background-color:blue;
+    color: beige;
+    font-size: larger;
+}
+
+.body{
+    background-color: red;
+    color: white;
+}
+
+span, p, #header, .body{
+    text-align: center;
+} 
+
+/*Color Name-Black,Green,Yellow,Orange
+RGB - Red,Green,Blue (0-255, 0-255, 0-255) rgb (0,234,234)
+Hex - #rrggbb-#e0bcba
+HSL - Hue Saturation Lightness 0-360, 100% 100% hsl(300, 100%, 100%)
+*/
+
