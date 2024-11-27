@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 9 CSS practice</title>
+    <style>
+.nav {
+    background-color: yellow; 
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+    font: bolder;
+    text-decoration:underline blue;
+    
+  }
+
+  span.a {
+  display: inline; /* the default for span */
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;  
+  background-color: yellow; 
+}
+
+span.b {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;    
+  background-color: yellow; 
+}
+
+span.c {
+  display: block;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;    
+  background-color: yellow; 
+}
+
+div.static {
+  position: static;
+  border: 3px solid #73AD21;
+}
+
+div.relative {
+  position: relative;
+  left: 30px;
+  border: 3px solid #73AD21;
+}
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+} 
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+div.sticky {
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
+
+.container {
+  position: relative;
+}
+
+.topleft {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+
+.topright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+img { 
+  width: 100%;
+  height:auto;
+  opacity: 0.6;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+.bottomright {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+h3{
+    color:red;
+    background-color: aqua;
+    text-align: center;
+    font-size: 20px;
+}
+
+h4 {
+    color: blue;
+    text-align: left;
+}
+
+p.ex1 {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+div {
+  border: 1px solid gray;
+  padding: 8px;
+}
+
+h5 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #4CAF50;
+  font-size: 30px;
+  background-color: pink;
+}
+
+ .myself{
+  text-indent:0px;
+  text-align:justify;
+  letter-spacing: 3px;
+}
+
+a {
+  text-decoration: none;
+  color: #008CBA;
+}
+
+p.uppercase {
+  text-transform: uppercase;
+  line-height: 0.8;
+  letter-spacing: 0cm;
+  text-indent: 50px;
+  word-spacing: 5px;
+  white-space: nowrap;
+  text-decoration-line: underline;
+
+}
+
+p.lowercase {
+  text-transform: lowercase;
+  text-shadow: 2px 2px 5px red;
+  text-decoration-line: line-through;
+}
+
+p.capitalize {
+  text-transform: capitalize;
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+  text-decoration-line: overline;
+}
+h6{
+    font-size: 30px;
+    text-align: center;
+    background-color: #73AD21;
+
+}
+p.decoration{
+    text-decoration: overline underline;
+    text-shadow:1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    text-decoration-style: none; 
+    text-decoration-thickness: 2px;
+    letter-spacing: 2px;
+}
+
+</style>
+        </head>
+        <body>
+
+<h1>Travels And Tour Management System</h1>
+<p>A travel and tour management system is a software that helps manage all aspects of travel and tourism. Travel and tour management systems are important for the hospitality industry, which includes hotels, resorts, tour booking agencies, and flight booking agencies.
+</p>
+
+
+<ul class="nav">
+  <li><a href="#home">Home</a></li>
+  <li><a href="#about">About Us</a></li>
+  <li><a href="#tour packages">Tour packages</a></li>  
+  <li><a href="#contact">Contact Us</a></li>
+</ul>
+
+<h1>The Display Property</h1>
+
+<h2>Display: Inline</h2>
+<div> It is crucial to choose the right travel industry management system that effectively fulfills all your requirements. So, while choosing any travel management system, you have to look for the features that are most impactful and unique from others. 
+Here are the features of a travel management system that are most efficient. <span class="a">Travel Policy Customization </span>  and <span class="a">Booking Management.</span> It implements workflows for pre-trip approval requests, where employees submit travel plans for manager approval </div>
+
+<h2>Display: Inline-block</h2>
+<div>It is crucial to choose the right travel industry management system that effectively fulfills all your requirements. So, while choosing any travel management system, you have to look for the features that are most impactful and unique from others. 
+Here are the features of a travel management system that are most efficient. <span class="b">Travel Policy Customization </span>  and <span class="b">Booking Management.</span> It implements workflows for pre-trip approval requests, where employees submit travel plans for manager approval </div>
+    
+<h2>Display: Block</h2>
+<div>It is crucial to choose the right travel industry management system that effectively fulfills all your requirements. So, while choosing any travel management system, you have to look for the features that are most impactful and unique from others. 
+    Here are the features of a travel management system that are most efficient. <span class="c">Travel Policy Customization </span>  and <span class="c">Booking Management.</span> It implements workflows for pre-trip approval requests, where employees submit travel plans for manager approval.</div>
+
+    <h2>Position: Static</h2>
+
+<p>The travel management system is a complete software system designed to manage all the tasks related to travel or tourism, such as travel planning, budgeting, booking, purchasing, travel tracking, expense monitoring, data recording, cost control, and so on.</p>
+
+<div class="static">
+    Travel management systems help the business or individuals to manage the travel procedure. Implementing advanced travel software for small businesses has a lot of advantages: This is static;
+</div>
+
+<h2>Position: Relative</h2>
+
+<p>The travel management system is a complete software system designed to manage all the tasks related to travel or tourism, such as travel planning, budgeting, booking, purchasing, travel tracking, expense monitoring, data recording, cost control, and so on.</p>
+
+<div class="relative">
+    Travel management systems help the business or individuals to manage the travel procedure. Implementing advanced travel software for small businesses has a lot of advantages: This is relative;
+</div>
+<h2>Position: Fixed</h2>
+
+<p>The travel management system is a complete software system designed to manage all the tasks related to travel or tourism, such as travel planning, budgeting, booking, purchasing, travel tracking, expense monitoring, data recording, cost control, and so on.</p>
+
+<div class="fixed">
+    Travel management systems help the business or individuals to manage the travel procedure. Implementing advanced travel software for small businesses has a lot of advantages: This is fixed;
+</div>
+
+<h2>Position: Absolute</h2>
+
+<p>The travel management system is a complete software system designed to manage all the tasks related to travel or tourism, such as travel planning, budgeting, booking, purchasing, travel tracking, expense monitoring, data recording, cost control, and so on.</p>
+
+<div class="relative">
+    Travel management systems help the business or individuals to manage the travel procedure. Implementing advanced travel software for small businesses has a lot of advantages: This is Relative;
+  <div class="absolute">
+    Travel management systems help the business or individuals to manage the travel procedure: This is Absolute;</div>
+</div>
+
+<p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
+
+<div class="sticky">I am sticky!</div>
+
+<div style="padding-bottom:200px">
+  <p>Travel and tourism involve the movement of people for various reasons, including leisure, business, and more. They include many industries and services, such as: transportation, accommodation, attractions, and hospitality</p>
+  <p>A tour is something you do for fun or to learn. On the other hand, travel is all about journeying to new places. There are more differences, but it all boils down to this.</p>
+  <p>It's mission is to give travelers the experiences and services they need. This can include a wide range of options, including shelter, transportation, and help finding attractions and activities.</p>
+  <p>Tour operators advise customers about travel options and organize tours for individuals or groups of travelers. These professionals can have many job responsibilities, such as preparing tour itineraries and coordinating with vendors.</p>
+</div>
+
+<h3>Image Text</h3>
+<h4>Add some text to an image in the top left corner:</h4>
+
+<div class="container">
+  <img src="/Image/Saint martin.jpg" width="300" height="300">
+  <div class="topleft">Top Left</div>
+  <div class="topright">Top Right</div>
+  <div class="bottomleft">Bottom Left</div>
+  <div class="bottomright">Bottom Right</div>
+  <div class="center">Centered</div>
+</div>
+
+<div>
+    <h5>Text formatting</h5>
+    <p class="myself">I am a hard-working and driven individual who isn't afraid to face a challenge. I'm passionate about my work and I know how to get the job done. I would describe myself as an open and honest person who doesn't believe in misleading other people and tries to be fair in everything I do. For more information visit
+    <a target="_blank" href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://eller.arizona.edu/news/9-essential-things-include-your-tell-me-about-yourself-interview-answer&ved=2ahUKEwj_oo_U6fyJAxWoSmwGHb6ZFbkQFnoECGQQAw&usg=AOvVaw05RPGMYPuivEhmz32KuYuG">"About Myself"</a> link.</p>
+  </div>
+
+  <h6>Using the text-transform property</h6>
+
+<p class="uppercase">College Of Business Science & Technology</p>
+<p class="lowercase">Department Of Computer Science & Engineering</p>
+<p class="capitalize">16th Batch</p>
+<p class="decoration">Toma</p>
+
+</body>
+</html>
