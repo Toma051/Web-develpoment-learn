@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+.container div{
+float: left;
+padding: 15px;
+}
+
+div.div1{
+    background-color: red;
+}
+div.div2{
+    background-color: yellow;
+}
+div.div3{
+    background-color: green;
+}
+</style>
+
+</head>
+<body>
+    <div style="height: 250px;">
+        <h1>Orange</h1>
+        <img src="/Image/orange.jpg" class="image1">
+        <div class="text">Orange trees are widely grown in tropical and subtropical areas for their sweet fruit. The fruit of the orange tree can be eaten fresh or processed for its juice or fragrant peel. In 2022, 76 million tonnes of oranges were grown worldwide, with Brazil producing 22% of the total, followed by India and China.</div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+<div style="height: 250px;">
+        <h1>Banana</h1>
+        <img src="/Image/Banana.jpg" class="image2">
+        <div class="text">Banana, fruit of the genus Musa, of the family Musaceae, one of the most important fruit crops of the world. The banana is grown in the tropics, and, though it is most widely consumed in those regions, it is valued worldwide for its flavour, nutritional value, and availability throughout the year.</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h1>Strawberry</h1>
+        <img src="/Image/Starwberry.jpeg" class="image3">
+        <div class="text">A strawberry is actually a multiple fruit which consists of many tiny individual fruits embedded in a fleshy receptacle. The brownish or whitish specks, which are commonly considered seeds, are the true fruits, called achenes, and each of them surrounds a tiny seed.</div>
+<br>
+<br>
+<div class="container">
+       <h1>Float Next To Each Other</h1>
+       <p> In this example,the three box's will float to each other:</p>
+            <div class="div1">Box 1</div>
+            <div class="div2">Box 2</div>
+            <div class="div3">Box 3</div>
+</div>
+<br><br><br>
+
+<h1>Without clear</h1>
+<div class="div4">div4</div>
+<div class="div5">div5 - Notice that div5 is after div4 in the HTML code. However, since div4 floats to the left, the text in div5 flows around div4.</div>
+</div>
+<br><br>
+
+<h1>With clear</h1>
+<div class="div6">div6</div>
+<div class="div7">div7 - Here, clear: left; moves div6 down below the floating div5. The value "left" clears elements floated to the left. You can also clear "right" and "both".</div>
+<br>
+
+<div class="container2">
+<h1>Without Clearfix</h1>
+
+<p>This image is floated to the right. It is also taller than the element containing it, so it overflows outside of its container:</p>
+
+<div>
+  <img class="image4" src="/Image/Grape.jpg" alt="" width="170" height="170">
+  Grapes are good sources of vitamin C and fiber. Red grapes also contain flavonoids, which help protect our heart, arteries and blood vessels. There are over 50 varieties of grapes grown in California. Concord grapes are native to North America.
+</div>
+
+<h1 style="clear:right">With Clearfix</h1>
+<p>We can fix this by adding a clearfix class with overflow: auto; to the containing element:</p>
+
+<div class="clearfix">
+  <img class="image5" src="/Image/Grape.jpg" alt="" width="170" height="170">
+  Grapes are good sources of vitamin C and fiber. Red grapes also contain flavonoids, which help protect our heart, arteries and blood vessels. There are over 50 varieties of grapes grown in California. Concord grapes are native to North America.
+</div>
+<br><br>
+
+<h1>Without Clearfix</h1>
+
+<p>This image is floated to the right. It is also taller than the element containing it, so it overflows outside of its container:</p>
+
+<div>
+  <img class="image6" src="/Image/watermelon.jpg" alt="" width="170" height="170">
+  Watermelon contains vitamin C, which the body needs to produce collagen. Collagen is essential for cell structure and immune function. Vitamin C also promotes wound healing. Studies suggest that vitamin C may help promote healthy skin, including reducing the risk of age-related damage.
+</div>
+
+<h1 style="clear:right">With New Modern Clearfix</h1>
+<p>Add the clearfix hack to the containing element, to fix this problem:</p>
+
+<div class="clearfix">
+  <img class="image7" src="/Image/watermelon.jpg" alt="" width="170" height="170">
+  Watermelon contains vitamin C, which the body needs to produce collagen. Collagen is essential for cell structure and immune function. Vitamin C also promotes wound healing. Studies suggest that vitamin C may help promote healthy skin, including reducing the risk of age-related damage.
+</div>
+
+<br><br>
+
+<h1>Some Icon Example:</h1>
+<i class="fa-brands fa-facebook">Facebook</i><br><br>
+<i class="fa-brands fa-whatsapp">Whatsapp</i><br><br>
+<i class="fa-brands fa-instagram">Instagram</i><br><br>
+<i class="fa-brands fa-telegram">Telegram</i><br><br>
+<i class="fa-brands fa-github">Github</i>
+
+<h2>Styled icons (size and color):</h2>
+<i class="fa-brands fa-facebook"style="font-size:24px; color:blue;"></i><br>
+<i class="fa-brands fa-whatsapp"style="font-size:36px; color:rgb(17, 232, 17);"></i><br>
+<i class="fa-brands fa-instagram"style="font-size:48px;color:rgba(255, 0, 157, 0.81);"></i><br>
+<i class="fa-brands fa-github"style="font-size:60px;color:black;"></i>
+</body>
+</html>
