@@ -1,0 +1,46 @@
+.image-container img {
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  color: white;
+  width: 350px;
+  height: 400px;
+
+  }
+
+    body{
+    margin:0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    flex-direction:column;
+  }
+  .info{
+    text-align:left;
+    margin-top: 20px;
+    line-height: 1.6;
+
+  }
+  .info h2 {
+    margin: 10px 0;
+    padding: 0 60px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    font-style: italic;
+  }
+  .info p{
+    margin: 5px 0;
+    padding: 0 60px;
+    font-size: 1rem;
+    color: white;
+    font-style: italic;
+  }
+    h1{
+    margin: 20px 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+  }
